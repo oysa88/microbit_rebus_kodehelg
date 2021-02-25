@@ -1,5 +1,5 @@
 {
-    "name": "Spille på flaskene fra mørkest til lysest tone - tutorial",
+    "name": "microbit_reusløp",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -9,7 +9,14 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "Post1_bitbot.md",
+        "Post2_vannturbin.md",
+        "Post3_Analogsynth.md",
+        "Post4_Flaske_resonanse.md",
+        "Post5_kirurgirobot.md",
+        "Post6_togbane.md",
+        "Post7_Robothakkespettene.md"
     ],
     "testFiles": [
         "test.ts"
