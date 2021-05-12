@@ -1,6 +1,6 @@
 # Post7_Robothakkespettene
 
-## Steg 1
+## Steg 1 @unplugged
 
 ### Instruksjon
 

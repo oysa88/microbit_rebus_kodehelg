@@ -1,13 +1,7 @@
 # Post 3: Spill melodien som vises på analog synth
 
-## Steg 0
 
-### Spill melodien som vises på analog synth
-
-På denne posten skal  
-
-
-## Steg 1
+## Steg 1 @unplugged
 
 ### Instruksjon
 
