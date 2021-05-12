@@ -1,18 +1,24 @@
 # Post 4: Spille på flaskene fra mørkeste til lyseste tone
 
-## Steg 1
+
+## Steg 1 @unplugged
 
 ### Instruksjon
 
-Du skal spille på flaskene fra den mørkeste til den lyseste tonen. (Trykk på knappen for å høre tonene i rekkefølgen flaskene står.)
+På denne posten skal du sende en kommando som skal spille på flaskene, fra den mørkeste til den lyseste tonen. T
 
-Følg instruksjonen for å løse oppgaven!
+For å høre hvilken tone som flaskene spiller, kan du trykke på knappen på installasjonen for å høre tonene i rekkefølgen flaskene står.
+
+Følg instruksjonen videre for å løse oppgaven!
+
+!(GIF)
+
 
 ## Steg 2
 
 ### Ved start
 
-Sett opp egen ``||radio:Radio sett gruppe||``. Den skal være den samme som posten du er på. Sett den inn i ``||basic: ved start||``.
+For å kunne snakke med flaskene, må vi sett opp en egen ``||radio:Radio sett gruppe||``. Radiogruppen skal være den samme som posten du er på (4). Sett den inn i ``||basic: ved start||``.
 
 ```blocks
 radio.setGroup(4)
