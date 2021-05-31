@@ -61,6 +61,6 @@ radio.onReceivedString(function (receivedString) {
 
 ### Last ned koden
 
-Last ned koden til din micro:bit og send den avgårde ved å trykke på knapp A på din micro:bit. 
+``||math: Last ned||`` koden til din micro:bit og send den avgårde ved å riste på micro:biten din. 
 
 Lykke til!
