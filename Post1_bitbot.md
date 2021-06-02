@@ -24,7 +24,7 @@ Lykke til!
 Sett opp egen ``||radio:Radio sett gruppe||``. Den skal være den samme som posten du er på. Sett den inn i ``||basic: ved start||``.
 
 ```blocks
-radio.setGroup(3)
+radio.setGroup(1)
 ```
 
 ## Steg 3.1 @unplugged
