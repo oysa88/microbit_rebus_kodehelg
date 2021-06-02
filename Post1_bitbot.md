@@ -122,9 +122,12 @@ For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||rad
 
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
+Hver gang du mottar en melding skal du sette variabelen ``||variabel: AvPå||`` til 0.
+
 ```blocks
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)
+    AvPå = 0
 })
 ```
 
