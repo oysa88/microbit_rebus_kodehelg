@@ -131,7 +131,7 @@ radio.onReceivedString(function (receivedString) {
 })
 ```
 
-## Steg 5
+## Steg 7
 
 ### Last ned koden
 
