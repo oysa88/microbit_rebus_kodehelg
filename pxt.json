@@ -16,7 +16,8 @@
         "Post4_Flaske_resonanse.md",
         "Post5_kirurgirobot.md",
         "Post6_togbane.md",
-        "Post7_Robothakkespettene.md"
+        "Post7_Robothakkespettene.md",
+        "Sende_svar.md"
     ],
     "testFiles": [
         "test.ts"
