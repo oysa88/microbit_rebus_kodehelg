@@ -1,5 +1,6 @@
 {
     "name": "microbit_rebus_kodehelg",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "core": "*",
