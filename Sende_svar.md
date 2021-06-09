@@ -6,7 +6,7 @@
 
 Du har nå løst alle postene og skal ha fått et løsningsord. Dette skal vi sende over til micro:bot-orkesteret!
 
-Hvis du har riktig løsningsord, vil orkesteret spille en samg for det! Hvis ikke... Kanskje du ikke har løst alle postene allikevel?
+Hvis du har riktig løsningsord, vil orkesteret spille en sang for deg! Hvis ikke... Kanskje du ikke har løst alle postene allikevel?
 
 
 ## Steg 2
