@@ -25,7 +25,7 @@ radio.setGroup(4)
 
 Inni blokken ``||basic: gjenta for alltid||`` skal vi kjøre en sekvens som vi skru lysene i byen på og av. 
 
-Sekvensen skal kun kjøres hvis ``||input: knapp A trykkes||``. Vi finne blokken ``||logic: hvis||`` som vi henter fra ``||logic: Logikk||``.
+Sekvensen skal kun kjøres hvis ``||input: knapp A trykkes||``. Vi finne blokken ``||logic: hvis sann så||``, som vi henter fra ``||logic: Logikk||``.
 
 ```blocks
 basic.forever(function () {

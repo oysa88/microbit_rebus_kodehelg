@@ -5,6 +5,8 @@
 
 ### Instruksjon
 
+![output-mtu-Sij.gif](https://i.postimg.cc/0QqYc2P6/output-mtu-Sij.gif)
+
 Du skal spille den samme melodien som den analoge synthen spiller. Trykk på knappen ved synthen for å høre melodien. 
 
 Følg instruksjonen for å løse oppgaven!

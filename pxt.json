@@ -18,7 +18,8 @@
         "Post5_kirurgirobot.md",
         "Post6_togbane.md",
         "Post7_Robothakkespettene.md",
-        "Sende_svar.md"
+        "Sende_svar.md",
+        "Undervisning.md"
     ],
     "testFiles": [
         "test.ts"

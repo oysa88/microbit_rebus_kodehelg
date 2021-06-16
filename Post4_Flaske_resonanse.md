@@ -5,20 +5,19 @@
 
 ### Instruksjon
 
-På denne posten skal du sende en kommando som skal spille på flaskene, fra den mørkeste til den lyseste tonen. T
+![output-Z9vas-C.gif](https://i.postimg.cc/SNb7fX24/output-Z9vas-C.gif)
 
-For å høre hvilken tone som flaskene spiller, kan du trykke på knappen på installasjonen for å høre tonene i rekkefølgen flaskene står.
+På denne posten skal du sende en kommando som skal spille på flaskene, fra den mørkeste til den lyseste tonen.
 
 Følg instruksjonen videre for å løse oppgaven!
 
-!(GIF)
 
 
 ## Steg 2
 
 ### Ved start
 
-For å kunne snakke med flaskene, må vi sett opp en egen ``||radio:Radio sett gruppe||``. Radiogruppen skal være den samme som posten du er på (4). Sett den inn i ``||basic: ved start||``.
+For å kunne "snakke" med flaskene, må vi sett opp en egen ``||radio:Radio sett gruppe||``. Radiogruppen skal være den samme som posten du er på (4). Sett den inn i ``||basic: ved start||``.
 
 ```blocks
 radio.setGroup(4)

@@ -6,6 +6,8 @@
 
 ### Programmere fjernkontroll for å styre bit:bit
 
+![Bitbot-bilbane-600px.png](https://i.postimg.cc/fTws5C6m/Bitbot-bilbane-600px.png)
+
 Deres oppgave er å styre bilen fra start til mål på banen. Bilen må kjøre over alle (3) sensorene på banen. Rekkefølgen har ingen betydning, men sensor i mål MÅ være den siste dere aktiverer.
 
 Ringen med lys vil fylles opp når en sensor er blitt aktivert! Dere har 30 sekunder på å kjøre bilen gjennom hele løypa, og dere har så mange forsøk dere trenger!
@@ -14,7 +16,6 @@ Så følg instruksjonen videre for å programmere fjernkontrollen.
 
 Lykke til!
 
-![Bitbot-bilbane-600px.png](https://i.postimg.cc/fTws5C6m/Bitbot-bilbane-600px.png)
 
 
 ## Steg 2
@@ -35,8 +36,8 @@ For å kunne kontrollere bit:bot-bilen skal vi bruke helningsvinklene til micro:
 
 Vi skal sende:
 
-- ``||input: pitch||`` for å styre hastigheten
-- ``||input: roll||`` til å styre svingingen
+- ``||input: pitch||`` for å styre hastigheten til bit:bit-bilen
+- ``||input: roll||`` til å styre svingingen til bit:bit-bilen
 
 ![](https://cdn.sanity.io/images/ajwvhvgo/production/5da9fe1ca277f95cc2e7d1c1f1f8b68b32a747f7-622x625.png?w=435&q=80&fit=max&auto=format)
 
