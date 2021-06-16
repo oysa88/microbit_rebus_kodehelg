@@ -36,7 +36,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Steg 4
 
-### Finn defekt hakkespetten
+### Last ned koden
 
 ``||math: Last ned||`` koden din inn på en micro:bit. Trykk på knapp A for å spille av alle hakkespettene. Gå rundt i skogen og lytt etter den defekte hakkespetten.
 
