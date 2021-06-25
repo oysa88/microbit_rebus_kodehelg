@@ -8,6 +8,8 @@ Du har nå løst alle postene og skal ha fått et løsningsord. Dette skal vi se
 
 Hvis du har riktig løsningsord, vil orkesteret spille en sang for deg! Hvis ikke... Kanskje du ikke har løst alle postene allikevel?
 
+![microbitorkester.jpg](https://i.postimg.cc/k5h33f83/microbitorkester.jpg)
+
 
 ## Steg 2
 
