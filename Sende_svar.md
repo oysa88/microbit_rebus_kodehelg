@@ -4,11 +4,11 @@
 
 ### Gratulerer!
 
+![microbitorkester.jpg](https://i.postimg.cc/k5h33f83/microbitorkester.jpg)
+
 Du har nå løst alle postene og skal ha fått et løsningsord. Dette skal vi sende over til micro:bot-orkesteret!
 
 Hvis du har riktig løsningsord, vil orkesteret spille en sang for deg! Hvis ikke... Kanskje du ikke har løst alle postene allikevel?
-
-![microbitorkester.jpg](https://i.postimg.cc/k5h33f83/microbitorkester.jpg)
 
 
 ## Steg 2
@@ -25,3 +25,11 @@ input.onButtonPressed(Button.A, function () {
     radio.sendString("")
 })
 ```
+
+## Steg 3
+
+### Last ned koden
+
+``||math: Last ned||`` koden din inn på en micro:bit. Trykk på knapp A for å sende over løsningsordet, og lytt på melodien som spilles!
+
+God fornøyelse, og gratulerer!

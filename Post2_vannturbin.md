@@ -4,6 +4,8 @@
 
 ### Starte vannturbin for strømproduksjon
 
+![20201015-114623.jpg](https://i.postimg.cc/SKbKGyJg/20201015-114623.jpg)
+
 Vi trenger å produsere strøm til byen vår, men ønsker kun å produsere om dagen. For å sjekke om det dag etter natt skal vi lage en funksjon som sjekker om lysnivået i rommet er høyere enn en gitt verdi.
 
 Vi skal derfor bruke lyssensoren som er innebygd i vår micro:bit.

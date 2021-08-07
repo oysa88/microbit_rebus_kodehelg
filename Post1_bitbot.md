@@ -32,14 +32,14 @@ radio.setGroup(1)
 
 ### Bruke helningsvinklene til micro:bit
 
+![](https://cdn.sanity.io/images/ajwvhvgo/production/5da9fe1ca277f95cc2e7d1c1f1f8b68b32a747f7-622x625.png?w=435&q=80&fit=max&auto=format)
+
 For å kunne kontrollere bit:bot-bilen skal vi bruke helningsvinklene til micro:bit. 
 
 Vi skal sende:
 
 - ``||input: pitch||`` for å styre hastigheten til bit:bit-bilen
 - ``||input: roll||`` til å styre svingingen til bit:bit-bilen
-
-![](https://cdn.sanity.io/images/ajwvhvgo/production/5da9fe1ca277f95cc2e7d1c1f1f8b68b32a747f7-622x625.png?w=435&q=80&fit=max&auto=format)
 
 ## Steg 3.2
 
@@ -119,7 +119,7 @@ basic.forever(function () {
 
 ### Motta svar hvis oppgaven er løst
 
-For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal ``||basic: vise teksten||`` ``||variable: receivedString||``.
+For å kunne motta bokstaven når oppgaven er løst, må vi sette opp at ``||radio: når radio mottar||`` skal ``||basic: vise teksten||`` ``||variable: receivedString||``.
 
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
