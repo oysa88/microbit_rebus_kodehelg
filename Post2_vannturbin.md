@@ -6,12 +6,9 @@
 
 ![20201015-114623.jpg](https://i.postimg.cc/SKbKGyJg/20201015-114623.jpg)
 
-Vi trenger å produsere strøm til byen vår, men ønsker kun å produsere om dagen. For å sjekke om det dag etter natt skal vi lage en funksjon som sjekker om lysnivået i rommet er høyere enn en gitt verdi.
+Vi trenger å produsere strøm til byen vår, så for å gjøre det skal vi starte opp vannkraftverket. 
 
-Vi skal derfor bruke lyssensoren som er innebygd i vår micro:bit.
-
-Lyssensoren går mellom 0-255, der 0 er mørkt og 255 er lyst. Vi skal bruke verdien 180 som terskelverdi, dvs. at vi må minst ha en lysstyrke på 180 i rommet for å starte å produsere strøm.
-
+Vi skal sette i gang en testproduksjon som skal vare i 10 sekunder. 
 
 ## Steg 2
 
@@ -25,20 +22,19 @@ radio.setGroup(2)
 
 ## Steg 3
 
-### Sett opp hvis-betingelse som sjekker lysnivået
+### Bruke knappene for å starte produksjonen
 
-Inni en ``||input: gjenta for alltid||`` skal vi sette opp en ``||logic: hvis-betingelse||``. En ``||logic: hvis-betingelse||`` sjekker om betingelse er oppfylt. Hvis den er det, vil koden inni ble utført.
+Vi skal starte testen når ``||input: når knapp A trykkes||``. 
 
-- Hvis lysnivået er over 180 skal ``||radio: radio send tekst||`` = "Start produksjon". 
-- Ellers skal ``||radio: radio send tekst||`` = "Stopp produksjon".
+- For å starte testen skal vi sende en ``||radio: radio send tekst||`` = "Start produksjon".
+- Så skal vi sette inn en ``||basic: pause||`` på 10000 millisekunder (10 sek).
+- Til slutt skal vi sende en ``||radio: radio send tekst||`` = "Stopp produksjon".
 
 ```blocks
-basic.forever(function () {
-    if (input.lightLevel() < 200) {
-        radio.sendString("Start produksjon")
-    } else {
-        radio.sendString("Stopp produksjon")
-    }
+input.onButtonPressed(Button.A, function () {
+    radio.sendString("Start produksjon")
+    basic.pause(10000)
+    radio.sendString("Stopp produksjon")
 })
 ```
 

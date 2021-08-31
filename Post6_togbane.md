@@ -5,7 +5,7 @@
 
 ### Skru på lyset i byen
 
-På denne posten skal vi starte 
+På denne posten skal vi skru lysene i byen av og på! Vi skal spil
 
 ## Steg 2
 
