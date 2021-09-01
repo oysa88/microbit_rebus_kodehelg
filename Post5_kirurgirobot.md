@@ -4,7 +4,7 @@
 
 ### Instruksjon
 
-![output-mtu-Sij.gif](https://i.postimg.cc/0QqYc2P6/output-mtu-Sij.gif)
+
 
 Sykehuset har kjøpt inn en ny kirurgirobot som skal hjelpe til med å utføre hjerteoparasjoner. 
 

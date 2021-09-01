@@ -5,7 +5,7 @@
 
 ### Instruksjon
 
-![output-Z9vas-C.gif](https://i.postimg.cc/SNb7fX24/output-Z9vas-C.gif)
+![Flaskene.gif](https://i.postimg.cc/WbbPfVS1/Flaskene.gif)
 
 På denne posten skal du sende en kommando som skal spille på flaskene, fra den mørkeste til den lyseste tonen.
 
