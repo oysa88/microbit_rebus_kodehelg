@@ -1,4 +1,4 @@
-function RiktigLøsning() {
+function RiktigLøsning () {
     soundExpression.giggle.play()
     Lysstyrke = 255
     for (let index = 0; index < 4; index++) {
@@ -21,7 +21,7 @@ function RiktigLøsning() {
     basic.pause(2500)
     CheckTest = 0
 }
-function FeilLøsning() {
+function FeilLøsning () {
     soundExpression.sad.play()
     Lysstyrke = 255
     for (let index = 0; index < 4; index++) {
@@ -49,7 +49,7 @@ radio.onReceivedString(function (receivedString) {
         FeilLøsning()
     }
 })
-function NeoPixelsControl() {
+function NeoPixelsControl () {
     if (CheckTest == 0) {
         strip.showColor(neopixel.colors(NeoPixelColors.Yellow))
     } else if (CheckTest == 1) {
@@ -65,7 +65,7 @@ function NeoPixelsControl() {
         RiktigLøsning()
     }
 }
-function CheckpointCheck() {
+function CheckpointCheck () {
     if (pins.digitalReadPin(DigitalPin.P1) == 1 && CheckTest == 0) {
         CheckTest = 1
         music.playTone(262, music.beat(BeatFraction.Whole))
