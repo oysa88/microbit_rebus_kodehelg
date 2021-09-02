@@ -27,9 +27,11 @@ radio.setGroup(3)
 
 Finn frem blokken: ``||input: Når knapp A+B trykkes||``.
 
-Nå skal vi spille på flaskene i riktig rekkefølge. Bruk blokken``||radio: radio send tekst||``.
+Inni her skal vi spille av tonene i riktig rekkefølge. For å gjøre det må vi bruke blokken ``||radio: radio send tekst||``.
 
-Send én blokk der dere skriver inn alle tonene dere skal spille, i riktig rekkefølge.
+Bruk én blokk av ``||radio: radio send tekst||`` der dere skriver inn alle tonene etter hverandre i riktig rekkefølge.
+
+NB: Bruk bare store bokstaver! (Se eksempel i Hint-vinduet.)
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -56,6 +58,6 @@ radio.onReceivedString(function (receivedString) {
 
 ### Last ned koden
 
-``||math: Last ned||`` koden til micro:biten og send den avgårde ved å riste på micro:biten. 
+``||math: Last ned||`` koden til micro:biten og send den avgårde ved å trykke på A og B på micro:biten. 
 
 Lykke til!
