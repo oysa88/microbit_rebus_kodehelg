@@ -23,15 +23,13 @@ radio.setGroup(3)
 
 ## Steg 3
 
-### Når ristes
+### Start testen med A+B
 
-Finn frem blokken: ``||input: Når ristes||``.
+Finn frem blokken: ``||input: Når knapp A+B trykkes||``.
 
 Nå skal vi spille på flaskene i riktig rekkefølge. Bruk blokken``||radio: radio send tekst||``.
 
-Send én blokk der dere skriver inn tonen du skal spille i riktig rekkefølge.
-
-Sett blokkene inni en ``||input: Når ristes||``.
+Send én blokk der dere skriver inn alle tonene dere skal spille, i riktig rekkefølge.
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
