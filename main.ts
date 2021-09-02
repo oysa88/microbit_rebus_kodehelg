@@ -1,11 +1,22 @@
-input.onButtonPressed(Button.A, function () {
-    radio.sendValue("spill", 2)
-    radio.sendValue("spill", 0)
-    radio.sendValue("spill", 1)
-    radio.sendValue("spill", 3)
-    radio.sendString("")
+input.onButtonPressed(Button.AB, function () {
+    if (AvPå == 0) {
+        AvPå = 1
+    } else {
+        AvPå = 0
+    }
 })
-input.onGesture(Gesture.Shake, function () {
-	
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
+    AvPå = 0
 })
-radio.setGroup(4)
+let Roll = 0
+let Pitch = 0
+let AvPå = 0
+radio.setGroup(1)
+basic.forever(function () {
+    Pitch = input.rotation(Rotation.Pitch)
+    Roll = input.rotation(Rotation.Roll)
+    radio.sendValue("P", Pitch)
+    radio.sendValue("A", AvPå)
+    radio.sendValue("R", Roll)
+})
