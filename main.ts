@@ -1,4 +1,4 @@
-function RiktigLøsning() {
+function RiktigLøsning () {
     bitbot.setLedColor(0x00FF00)
     basic.pause(4000)
     Restart()
@@ -9,12 +9,12 @@ radio.onReceivedNumber(function (receivedNumber) {
         RiktigLøsning()
     }
 })
-function Restart() {
+function Restart () {
     LøstOppgave = false
     Sekvens = false
     bitbot.setLedColor(0xFFFF00)
 }
-function FeilLøsning() {
+function FeilLøsning () {
     bitbot.setLedColor(0xFF0000)
     basic.pause(4000)
     Restart()
@@ -47,18 +47,18 @@ Restart()
 basic.forever(function () {
     if (AvPå == 1) {
         DriveLeft = Pitch - pins.map(
-            Roll,
-            0,
-            1023,
-            Pitch,
-            Pitch * -1
+        Roll,
+        0,
+        1023,
+        Pitch,
+        Pitch * -1
         )
         DriveRight = Pitch - pins.map(
-            Roll,
-            0,
-            -1023,
-            Pitch,
-            Pitch * -1
+        Roll,
+        0,
+        -1023,
+        Pitch,
+        Pitch * -1
         )
         bitbot.motor(BBMotor.Left, Pitch - DriveLeft)
         bitbot.motor(BBMotor.Right, Pitch - DriveRight)
@@ -71,4 +71,3 @@ basic.forever(function () {
         FeilLøsning()
     }
 })
-
