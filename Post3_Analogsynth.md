@@ -27,20 +27,13 @@ radio.setGroup(3)
 
 Finn frem blokken: ``||input: Når ristes||``.
 
-Nå skal vi spille på flaskene i riktig rekkefølge. Bruk blokken``||radio: radio send tekst||``.
+Nå skal vi spille tonene i riktig rekkefølge. Bruk blokken``||radio: radio send tekst||``. Sett den inn i ``||input: Når ristes||``.
 
-Send én blokk per tone du skal spille, og skriv inn tonen du skal spille. Husk å plassere notene i riktig rekkefølge.
-
-Sett blokkene inni en ``||input: Når ristes||``.
+Skriv inn tonen du skal spille. Husk å plassere de i riktig rekkefølge. (Se eksempel i Hint.)
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
-    radio.sendString("")
-    radio.sendString("")
-    radio.sendString("")
-    radio.sendString("")
-    radio.sendString("")
-    radio.sendString("")
+    radio.sendString("CDEFGAHC")
 })
 ```
 

@@ -1,6 +1,6 @@
 {
     "name": "microbit_rebus_kodehelg",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -24,6 +24,10 @@
     "testFiles": [
         "test.ts"
     ],
+    "targetVersions": {
+        "target": "4.0.11",
+        "targetId": "microbit"
+    },
     "supportedTargets": [
         "microbit"
     ],

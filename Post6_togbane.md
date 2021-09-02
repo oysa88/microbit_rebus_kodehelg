@@ -16,7 +16,7 @@ For å kunne snakke med byen, må vi sett opp en egen ``||radio:Radio sett grupp
 Sett den inn i ``||basic: ved start||``.
 
 ```blocks
-radio.setGroup(4)
+radio.setGroup(6)
 ```
 
 ## Steg 3
@@ -38,9 +38,11 @@ basic.forever(function () {
 
 ### Styre lysene
 
-For å sende beskjed til byen om at lysene skal skrus på, må ``||radio: radio sende tekst||`` "Lys på". 
+For å sende beskjed til byen om at lysene skal skrus på, må ``||radio: radio sende tekst||`` være "Lys på".
 
-Mellom hver gang du gir beskjed om å skru på lyset i byen, må vi legge inn en ``||basic: pause||`` på 500-1000 ms.
+For å skrus lysene av, send ``||radio: radio sende tekst||`` "Lys av".
+
+Mellom hver gang du gir beskjed om å skru på eller av lysene i byen, må vi legge inn en ``||basic: pause||`` på mellom 500 og 2000 ms.
 
 Lag en egendefinert sekvens der lysene i byen blir skrudd av og på.
 
@@ -51,11 +53,11 @@ basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         radio.sendString("Lys på")
         basic.pause(500)
+        radio.sendString("Lys av")
+        basic.pause(730)
         radio.sendString("Lys på")
-        basic.pause(500)
-        radio.sendString("Lys på")
-        basic.pause(1000)
-        radio.sendString("Lys på")
+        basic.pause(1206)
+        radio.sendString("Lys av")
     }
 })
 ```

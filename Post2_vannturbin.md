@@ -4,11 +4,11 @@
 
 ### Starte vannturbin for strømproduksjon
 
-Vi trenger å produsere strøm til byen vår, men ønsker kun å produsere om dagen. For å sjekke om det dag etter natt skal vi lage en funksjon som sjekker om lysnivået i rommet er høyere enn en gitt verdi.
+Vi trenger å produsere strøm til byen vår, men ønsker kun å produsere om dagen. For å sjekke om det er blitt morgen, skal vi lage en funksjon som sjekker om lysnivået i rommet er høyere enn en gitt verdi.
 
 Vi skal derfor bruke lyssensoren som er innebygd i vår micro:bit.
 
-Lyssensoren går mellom 0-255, der 0 er mørkt og 255 er lyst. Vi skal bruke verdien 180 som terskelverdi, dvs. at vi må minst ha en lysstyrke på 180 i rommet for å starte å produsere strøm.
+Lyssensoren verdi går mellom 0-255, der 0 er mørkest og 255 er lystest. Vi skal bruke verdien 180 som terskelverdi, dvs. at vi må minst ha en lysstyrke på 180 i rommet for å starte å produsere strøm.
 
 
 ## Steg 2
