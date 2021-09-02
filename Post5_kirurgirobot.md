@@ -6,7 +6,7 @@
 
 
 
-Sykehuset har kjøpt inn en ny kirurgirobot som skal hjelpe til med å utføre hjerteoparasjoner. 
+Sykehuset har kjøpt inn en ny kirurgirobot som skal hjelpe til med å utføre hjerteoperasjoner. 
 
 Så du har fått i oppgave å programmere den slik at kuttet den utfører skjer på riktig sted.
 
@@ -28,26 +28,17 @@ radio.setGroup(3)
 
 ### Sett opp banen som roboten skal bevege seg i.
 
-Robotarmen beveger seg rundt i et koordinatsystem som du kan se på operasjonsbordet. Hodet som beveger kniven vil bevege seg 
+Robotarmen beveger seg rundt i et koordinatsystem som du kan se på operasjonsbordet. Hodet som beveger kniven, vil bevege seg med én og én rute av gangen.
 
 
 
 
 Finn frem blokken: ``||input: Når ristes||``.
 
-Nå skal vi spille på flaskene i riktig rekkefølge. Bruk blokken``||radio: radio send tekst||``.
-
-Send én blokk per tone du skal spille, og skriv inn tonen du skal spille. Husk å plassere notene i riktig rekkefølge.
-
-Sett blokkene inni en ``||input: Når ristes||``.
+``||input: Når ristes||``.
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
-    radio.sendString("")
-    radio.sendString("")
-    radio.sendString("")
-    radio.sendString("")
-    radio.sendString("")
     radio.sendString("")
 })
 ```

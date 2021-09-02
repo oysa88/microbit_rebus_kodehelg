@@ -34,7 +34,7 @@ Bruk én blokk av ``||radio: radio send tekst||`` der dere skriver inn alle tone
 NB: Bruk bare store bokstaver! (Se eksempel i Hint-vinduet.)
 
 ```blocks
-input.onGesture(Gesture.Shake, function () {
+input.onButtonPressed(Button.AB, function () {
     radio.sendString("CDEFGAHC")
 })
 ```
