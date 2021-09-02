@@ -28,11 +28,11 @@ radio.setGroup(7)
 
 Finn frem blokken: ``||input: Når knapp A trykkes||``.
 
-Inni her skal vi plassere en ``||radio: radio send tekst||``. Teksten vi skal sende er: "Systemtest". 
+Inni her skal vi plassere en ``||radio: radio send tekst||``. Teksten vi skal sende er: "systemtest". 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
-    radio.sendString("Systemtest")
+    radio.sendString("systemtest")
 })
 ```
 
