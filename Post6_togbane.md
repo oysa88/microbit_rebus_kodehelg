@@ -5,6 +5,8 @@
 
 ### Skru på lyset i byen
 
+![Industrimodellen.jpg](https://i.postimg.cc/NMxGLSy8/Industrimodellen.jpg)
+
 På denne posten skal vi skru lysene i byen av og på! Vi ønsker at lyset skal slå seg på når det er mørkt ute og av når det er lyst ute.
 
 For å gjøre dette skal vi bruke den innebygde lyssensoren til micro:bit!

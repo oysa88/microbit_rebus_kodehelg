@@ -2,7 +2,9 @@
 
 ## Steg 1 @unplugged
 
-### Instruksjon
+### Kirurgirobot
+
+![Operasjonsrobot.png](https://i.postimg.cc/ydJ4CGmY/Operasjonsrobot.png)
 
 Sykehuset har kjøpt inn en ny kirurgirobot som skal hjelpe til med å utføre hjerteoperasjoner. 
 
@@ -31,9 +33,7 @@ Robotarmen beveger seg rundt i et koordinatsystem som du kan se på operasjonsbo
 
 Finn frem blokken: ``||input: Når ristes||``. Inni her skal vi bruke blokken ``||radio: radio send tekst||``.
 
-Meldingen vi skal sende er en 
-
-``||input: Når ristes||``.
+I meldingen vi skal sende, må vi skrive inn alle bevegelsene vi vil at roboten ska utføre.
 
 NB: Bruk bare store bokstaver! (Se eksempel i Hint-vinduet.)
 
@@ -48,7 +48,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ### Når radio mottar
 
-For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal ``||basic: vise teksten||`` ``||variable: receivedString||``.
+For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal vi ``||basic: vise teksten||`` vi mottar i ``||variable: receivedString||``.
 
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
