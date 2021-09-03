@@ -4,12 +4,11 @@
 
 ### Starte vannturbin for strømproduksjon
 
-Vi trenger å produsere strøm til byen vår, men ønsker kun å produsere om dagen. For å sjekke om det er blitt morgen, skal vi lage en funksjon som sjekker om lysnivået i rommet er høyere enn en gitt verdi.
+![20201015-114623.jpg](https://i.postimg.cc/SKbKGyJg/20201015-114623.jpg)
 
-Vi skal derfor bruke lyssensoren som er innebygd i vår micro:bit.
+Vi trenger å produsere strøm til byen vår, så for å gjøre det skal vi starte opp vannkraftverket. 
 
-Lyssensoren verdi går mellom 0-255, der 0 er mørkest og 255 er lystest. Vi skal bruke verdien 180 som terskelverdi, dvs. at vi må minst ha en lysstyrke på 180 i rommet for å starte å produsere strøm.
-
+Vi skal sette i gang en testproduksjon som skal vare i 10 sekunder. 
 
 ## Steg 2
 
@@ -23,20 +22,19 @@ radio.setGroup(2)
 
 ## Steg 3
 
-### Sett opp hvis-betingelse som sjekker lysnivået
+### Bruke knappene for å starte produksjonen
 
-Inni en ``||input: gjenta for alltid||`` skal vi sette opp en ``||logic: hvis-betingelse||``. En ``||logic: hvis-betingelse||`` sjekker om betingelse er oppfylt. Hvis den er det, vil koden inni ble utført.
+Vi skal starte testen ``||input: når knapp A trykkes||``. 
 
-- Hvis lysnivået er over 180 skal ``||radio: radio send tekst||`` = "Start produksjon". 
-- Ellers skal ``||radio: radio send tekst||`` = "Stopp produksjon".
+- For å starte testen skal vi sende en ``||radio: radio send tekst||`` = "Start produksjon".
+- Så skal vi sette inn en ``||basic: pause||`` på 10000 millisekunder (10 sek).
+- Til slutt skal vi sende en ``||radio: radio send tekst||`` = "Stopp produksjon".
 
 ```blocks
-basic.forever(function () {
-    if (input.lightLevel() < 200) {
-        radio.sendString("Start produksjon")
-    } else {
-        radio.sendString("Stopp produksjon")
-    }
+input.onButtonPressed(Button.A, function () {
+    radio.sendString("Start produksjon")
+    basic.pause(10000)
+    radio.sendString("Stopp produksjon")
 })
 ```
 
@@ -44,7 +42,7 @@ basic.forever(function () {
 
 ### Motta svar hvis oppgaven er løst
 
-For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal ``||basic: vise teksten||`` ``||variable: receivedString||``.
+For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal vi ``||basic: vise teksten||`` vi mottar i ``||variable: receivedString||``.
 
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
@@ -58,6 +56,6 @@ radio.onReceivedString(function (receivedString) {
 
 ### Last ned koden
 
-``||math: Last ned||`` koden til din micro:bit. Hold micro:biten opp mot lyset og se om du klarer å starte å produsere strøm. Hva skjer hvis du legger micro:biten et mørkt sted?
+``||math: Last ned||`` koden til din micro:bit. Trykk på knapp A og se om du klarer å starte å produsere strøm.
 
 Lykke til!

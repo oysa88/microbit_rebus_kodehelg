@@ -23,16 +23,18 @@ radio.setGroup(3)
 
 ## Steg 3
 
-### Når ristes
+### Start testen med A+B
 
-Finn frem blokken: ``||input: Når ristes||``.
+Finn frem blokken: ``||input: Når knapp A+B trykkes||``.
 
-Nå skal vi spille tonene i riktig rekkefølge. Bruk blokken``||radio: radio send tekst||``. Sett den inn i ``||input: Når ristes||``.
+Inni her skal vi spille av tonene i riktig rekkefølge. For å gjøre det må vi bruke blokken ``||radio: radio send tekst||``.
 
-Skriv inn tonen du skal spille. Husk å plassere de i riktig rekkefølge. (Se eksempel i Hint.)
+Bruk én blokk av ``||radio: radio send tekst||`` der dere skriver inn alle tonene etter hverandre i riktig rekkefølge.
+
+NB: Bruk bare store bokstaver! (Se eksempel i Hint-vinduet.)
 
 ```blocks
-input.onGesture(Gesture.Shake, function () {
+input.onButtonPressed(Button.AB, function () {
     radio.sendString("CDEFGAHC")
 })
 ```
@@ -42,7 +44,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ### Når radio mottar
 
-For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal ``||basic: vise teksten||`` ``||variable: receivedString||``.
+For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal vi ``||basic: vise teksten||`` vi mottar i ``||variable: receivedString||``.
 
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
@@ -56,6 +58,6 @@ radio.onReceivedString(function (receivedString) {
 
 ### Last ned koden
 
-``||math: Last ned||`` koden til din micro:bit og send den avgårde ved å riste på micro:biten din. 
+``||math: Last ned||`` koden til micro:biten og send den avgårde ved å trykke på A og B på micro:biten. 
 
 Lykke til!
