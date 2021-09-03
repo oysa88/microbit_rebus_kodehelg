@@ -5,7 +5,9 @@
 
 ### Skru på lyset i byen
 
-På denne posten skal vi skru lysene i byen av og på! Vi skal spil
+På denne posten skal vi skru lysene i byen av og på! Vi ønsker at lyset skal slå seg på når det er mørkt ute og av når det er lyst ute.
+
+For å gjøre dette skal vi bruke den innebygde lyssensoren til micro:bit!
 
 ## Steg 2
 
@@ -23,9 +25,14 @@ radio.setGroup(6)
 
 ### Sette opp styring av lys
 
-Inni blokken ``||basic: gjenta for alltid||`` skal vi kjøre en sekvens som vi skru lysene i byen på og av. 
+Inni blokken ``||basic: gjenta for alltid||`` skal vi kjøre lage en funksjon for å skru lysene i byen på og av. 
 
-Sekvensen skal kun kjøres hvis ``||input: knapp A trykkes||``. Vi finne blokken ``||logic: hvis sann så||``, som vi henter fra ``||logic: Logikk||``.
+Funksjonen skal sjekke om lysnivået er over en viss verdi. 
+
+- Så hvis ``||input: lysnivå||`` er over 180 skal ``||radio: radio send tekst||`` = "Lys av". 
+- Ellers, ``||radio: radio send tekst||`` = "Lys på". 
+
+PS: Vi finne blokken ``||logic: hvis sann så||`` i menyen ``||logic: Logikk||``.
 
 ```blocks
 basic.forever(function () {
@@ -34,36 +41,7 @@ basic.forever(function () {
 })
 ```
 
-## Steg 4
-
-### Styre lysene
-
-For å sende beskjed til byen om at lysene skal skrus på, må ``||radio: radio sende tekst||`` være "Lys på".
-
-For å skrus lysene av, send ``||radio: radio sende tekst||`` "Lys av".
-
-Mellom hver gang du gir beskjed om å skru på eller av lysene i byen, må vi legge inn en ``||basic: pause||`` på mellom 500 og 2000 ms.
-
-Lag en egendefinert sekvens der lysene i byen blir skrudd av og på.
-
-(Hint: Et eksempel på hvordan koden kan se ut.)
-
-```blocks
-basic.forever(function () {
-    if (input.buttonIsPressed(Button.A)) {
-        radio.sendString("Lys på")
-        basic.pause(500)
-        radio.sendString("Lys av")
-        basic.pause(730)
-        radio.sendString("Lys på")
-        basic.pause(1206)
-        radio.sendString("Lys av")
-    }
-})
-```
-
-
-## Step 5
+## Step 4
 
 ### Når radio mottar svaret på oppgaven
 
@@ -77,10 +55,10 @@ radio.onReceivedString(function (receivedString) {
 })
 ```
 
-## Steg 6
+## Steg 5
 
 ### Last ned koden
 
-``||math: Last ned||`` koden til din micro:bit og send den avgårde ved å trykke på knapp A på din micro:bit. 
+``||math: Last ned||`` koden til din micro:bit og skru lyset i byen både på og av minst én gang hjelp av lyssensoren til micro:bi! 
 
 Lykke til!
