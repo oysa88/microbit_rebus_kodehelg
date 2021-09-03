@@ -38,7 +38,10 @@ PS: Vi finne blokken ``||logic: hvis sann så||`` i menyen ``||logic: Logikk||``
 
 ```blocks
 basic.forever(function () {
-    if (input.buttonIsPressed(Button.A)) {
+    if (input.lightLevel() > 180) {
+    	radio.sendString("Lys av")
+    } else {
+    	radio.sendString("Lys på")
     }
 })
 ```
