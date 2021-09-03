@@ -4,13 +4,12 @@
 
 ### Instruksjon
 
-
-
 Sykehuset har kjøpt inn en ny kirurgirobot som skal hjelpe til med å utføre hjerteoperasjoner. 
 
 Så du har fått i oppgave å programmere den slik at kuttet den utfører skjer på riktig sted.
 
 Følg instruksjonen for å gjennomføre operasjonen!
+
 
 ## Steg 2
 

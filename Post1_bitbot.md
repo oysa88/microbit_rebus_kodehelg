@@ -41,6 +41,7 @@ Vi skal sende:
 - ``||input: pitch||`` for å styre hastigheten til bit:bit-bilen
 - ``||input: roll||`` for å styre svingingen til bit:bit-bilen
 
+
 ## Steg 3.2
 
 ### Bruke helningsvinklene til micro:bit
