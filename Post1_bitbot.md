@@ -10,7 +10,7 @@
 
 Deres oppgave er å styre bilen fra start til mål på banen. Bilen må kjøre over alle (3) sensorene på banen. Rekkefølgen har ingen betydning, men sensor i mål MÅ være den siste dere aktiverer.
 
-Ringen med lys vil fylles opp når en sensor er blitt aktivert! Dere har 30 sekunder på å kjøre bilen gjennom hele løypa, og dere har så mange forsøk dere trenger!
+Ringen med lys vil fylles opp og du vil høre en lyd når en sensor er blitt aktivert! Dere har 40 sekunder på å kjøre bilen gjennom hele løypa, og dere har så mange forsøk dere trenger!
 
 Så følg instruksjonen videre for å programmere fjernkontrollen. 
 
@@ -39,20 +39,20 @@ For å kunne kontrollere bit:bot-bilen skal vi bruke helningsvinklene til micro:
 Vi skal sende:
 
 - ``||input: pitch||`` for å styre hastigheten til bit:bit-bilen
-- ``||input: roll||`` til å styre svingingen til bit:bit-bilen
+- ``||input: roll||`` for å styre svingingen til bit:bit-bilen
 
 ## Steg 3.2
 
 ### Bruke helningsvinklene til micro:bit
 
-Lag to variabler: ``||variabel: Roll||`` og ``||variabel: Pitch||``.
+Lag de to variablene: ``||variabel: Roll||`` og ``||variabel: Pitch||``.
 
 Inni ``||basic: gjenta for alltid||``:
 
 - Sett ``||variabel: Pitch||`` til å lese av ``||input: helningsvinkel forover-bakover||``
 - Sett ``||variabel: Roll||`` til å lese av ``||input: helningsvinkel høyre-venstre||``
 
-PS: Helningsvinkel hentes fra ``||input: Inndata --- mer||``
+PS: Helningsvinkel hentes fra ``||input: Inndata --> mer||``
 
 ```blocks
 let Pitch = 0
@@ -76,7 +76,7 @@ Inn blokken ``||input: når knapp A+B trykkes ||``:
 - Hent en ``||logic: hvis-betingelse||`` med ``||logic: ellers||``.
 - Sett at hvis variabelen ``||variabel: AvPå||`` = 0, skal ``||variabel: AvPå||`` settes til 1. Ellers skal den settes til 0. 
 
-Når vi sender 1 skrus bit:bot på, når vi sender 0 skrus den av.
+Når vi sender 1 skrus bit:bot seg på, når vi sender 0 skrus den seg av.
 
 ```blocks
 let AvPå = 0
@@ -97,7 +97,7 @@ Informasjonen vi har lagret i variablene ``||variabel: Pitch||``, ``||variabel: 
 
 Vi skal bruke blokken ``||radio: radio send verdi "navn" = 0||``, en for hver variabel.
 
-Inni ``||basic: gjenta for alltid||``: Sende 
+Inni ``||basic: gjenta for alltid||``:
 
 - "P" skal sende verdien til ``||variabel: Pitch||``
 - "A" skal sende verdien til ``||variabel: AvPå||``
@@ -119,7 +119,7 @@ basic.forever(function () {
 
 ### Motta svar hvis oppgaven er løst
 
-For å kunne motta bokstaven når oppgaven er løst, må vi sette opp at ``||radio: når radio mottar||`` skal ``||basic: vise teksten||`` ``||variable: receivedString||``.
+For å kunne motta bokstaven når oppgaven er løst, må vi sette opp at ``||radio: når radio mottar||`` skal vi ``||basic: vise teksten||`` vi mottar i ``||variable: receivedString||``.
 
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
