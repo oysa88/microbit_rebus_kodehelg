@@ -24,7 +24,7 @@ radio.setGroup(2)
 
 ### Bruke knappene for å starte produksjonen
 
-Vi skal starte testen når ``||input: når knapp A trykkes||``. 
+Vi skal starte testen ``||input: når knapp A trykkes||``. 
 
 - For å starte testen skal vi sende en ``||radio: radio send tekst||`` = "Start produksjon".
 - Så skal vi sette inn en ``||basic: pause||`` på 10000 millisekunder (10 sek).
@@ -42,7 +42,7 @@ input.onButtonPressed(Button.A, function () {
 
 ### Motta svar hvis oppgaven er løst
 
-For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal ``||basic: vise teksten||`` ``||variable: receivedString||``.
+For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||radio: når radio mottar||`` skal vi ``||basic: vise teksten||`` vi mottar i ``||variable: receivedString||``.
 
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
@@ -56,6 +56,6 @@ radio.onReceivedString(function (receivedString) {
 
 ### Last ned koden
 
-``||math: Last ned||`` koden til din micro:bit. Hold micro:biten opp mot lyset og se om du klarer å starte å produsere strøm. Hva skjer hvis du legger micro:biten et mørkt sted?
+``||math: Last ned||`` koden til din micro:bit. Trykk på knapp A og se om du klarer å starte å produsere strøm.
 
 Lykke til!
