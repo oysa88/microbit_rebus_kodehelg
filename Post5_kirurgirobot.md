@@ -30,16 +30,17 @@ radio.setGroup(3)
 
 Robotarmen beveger seg rundt i et koordinatsystem som du kan se på operasjonsbordet. Hodet som beveger kniven, vil bevege seg med én og én rute av gangen.
 
+Finn frem blokken: ``||input: Når ristes||``. Inni her skal vi bruke blokken ``||radio: radio send tekst||``.
 
-
-
-Finn frem blokken: ``||input: Når ristes||``.
+Meldingen vi skal sende er en 
 
 ``||input: Når ristes||``.
 
+NB: Bruk bare store bokstaver! (Se eksempel i Hint-vinduet.)
+
 ```blocks
 input.onGesture(Gesture.Shake, function () {
-    radio.sendString("")
+    radio.sendString("123456789KI")
 })
 ```
 

@@ -40,7 +40,7 @@ input.onButtonPressed(Button.A, function () {
 
 ### Last ned koden
 
-``||math: Last ned||`` koden din inn på en micro:bit. Trykk på knapp A for å spille av alle hakkespettene. Gå rundt i skogen og lytt etter den defekte hakkespetten.
+``||math: Last ned||`` koden inn på micro:biten din. Trykk på knapp A for å spille av alle hakkespettene. Gå rundt i skogen og lytt etter den defekte hakkespetten.
 
 Når du finner den, titt opp i trestammen der du hører den defekte hakkespetten, så vil du finne bokstaven den vil vise deg!
 
