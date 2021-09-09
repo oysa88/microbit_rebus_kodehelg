@@ -22,14 +22,14 @@ For å kunne snakke med roboten, trenger vi å bruke radiokommunikasjon.
 Sett opp egen ``||radio:Radio sett gruppe||``. Den skal være den samme som posten du er på. Sett den inn i ``||basic: ved start||``.
 
 ```blocks
-radio.setGroup(3)
+radio.setGroup(5)
 ```
 
 ## Steg 3
 
 ### Sett opp banen som roboten skal bevege seg i.
 
-Robotarmen beveger seg rundt i et koordinatsystem som du kan se på operasjonsbordet. Hodet som beveger kniven vil bevege seg med én og én rute av gangen: Frem og tilbake, fra side til side og diagonalt.
+Robotarmen beveger seg rundt i et koordinatsystem som du kan se på operasjonsbordet. Hodet som beveger kniven vil bevege seg med én og én rute av gangen: Frem og tilbake, fra side til side, eller diagonalt.
 
 Finn frem blokken: ``||input: Når ristes||``. Inni her skal vi bruke blokken ``||radio: radio send tekst||``.
 

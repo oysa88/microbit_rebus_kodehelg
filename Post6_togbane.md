@@ -31,7 +31,7 @@ Inni blokken ``||basic: gjenta for alltid||`` skal vi kjøre lage en funksjon fo
 
 Funksjonen skal sjekke om lysnivået er over en viss verdi. 
 
-- Så hvis ``||input: lysnivå||`` er over 180 skal ``||radio: radio send tekst||`` = "Lys av". 
+- Så ``||logic: hvis||`` ``||input: lysnivå||`` er over 180 skal ``||radio: radio send tekst||`` = "Lys av". 
 - Ellers, ``||radio: radio send tekst||`` = "Lys på". 
 
 PS: Vi finne blokken ``||logic: hvis sann så||`` i menyen ``||logic: Logikk||``.
