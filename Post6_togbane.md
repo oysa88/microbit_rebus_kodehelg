@@ -7,9 +7,9 @@
 
 ![Industrimodellen.jpg](https://i.postimg.cc/NMxGLSy8/Industrimodellen.jpg)
 
-På denne posten skal vi skru lysene i byen av og på! Vi ønsker at lyset skal slå seg på når det er mørkt ute og av når det er lyst ute.
+På denne posten skal vi skru lysene i byen av og på! Vi ønsker å bruke kun én knapp til å kunne gjøre dette.
 
-For å gjøre dette skal vi bruke den innebygde lyssensoren til micro:bit!
+For å gjøre dette skal vi bruke en ``||logic: hvis-betingelse||``!
 
 ## Steg 2
 
@@ -27,23 +27,19 @@ radio.setGroup(6)
 
 ### Sette opp styring av lys
 
-Inni blokken ``||basic: gjenta for alltid||`` skal vi kjøre lage en funksjon for å skru lysene i byen på og av. 
+Inni blokken ``||input: når knapp A trykkes||`` skal vi lage en funksjon for å skru lysene i byen på og av. 
 
-Funksjonen skal sjekke om lysnivået er over en viss verdi. 
+Først må vi lage variabelen: ``||variable: Lys||``. Funksjonen skal sjekke om ``||variable: Lys||`` er ``||logic: sann||`` eller ``||logic: usann||``. 
 
-- Så ``||logic: hvis||`` ``||input: lysnivå||`` er over 180 skal ``||radio: radio send tekst||`` = "Lys av". 
-- Ellers, ``||radio: radio send tekst||`` = "Lys på". 
+- Så ``||logic: hvis||`` ``||variable: Lys||`` er ``||logic: sann||`` skal ``||variable: Lys||`` settes til ``||logic: usann||`` og ``||radio: radio send tekst||`` = "Lys av". 
+- Ellers, sett ``||variable: Lys||`` til ``||logic: sann||`` og ``||radio: radio send tekst||`` = "Lys på". 
 
 PS: Vi finne blokken ``||logic: hvis sann så||`` i menyen ``||logic: Logikk||``.
 
 ```blocks
-basic.forever(function () {
-    if (input.lightLevel() > 180) {
-    	radio.sendString("Lys av")
-    } else {
-    	radio.sendString("Lys på")
-    }
-})
+input.onButtonPressed(Button.A, function () {
+     
+}
 ```
 
 ## Step 4
@@ -55,9 +51,7 @@ For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||rad
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
 ```blocks
-radio.onReceivedString(function (receivedString) {
-    basic.showString(receivedString)
-})
+input.onButtonPressed(Button.A)
 ```
 
 ## Steg 5
