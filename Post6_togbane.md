@@ -37,9 +37,16 @@ Først må vi lage variabelen: ``||variable: Lys||``. Funksjonen skal sjekke om 
 PS: Vi finne blokken ``||logic: hvis sann så||`` i menyen ``||logic: Logikk||``.
 
 ```blocks
+let Lys = false
 input.onButtonPressed(Button.A, function () {
-     
-}
+    if (Lys) {
+        Lys = false
+        radio.sendString("Lys av")
+    } else {
+        Lys = true
+        radio.sendString("Lys på")
+    }
+})
 ```
 
 ## Step 4
@@ -51,13 +58,15 @@ For å kunne motta bokstaven når oppgaven er løst, må se sette opp at ``||rad
 Trekk ``||variable: receivedString||`` ut fra ``||radio: når radio mottar||`` og sett den inn i en ``||basic: vis tekst||``.
 
 ```blocks
-input.onButtonPressed(Button.A)
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
+})
 ```
 
 ## Steg 5
 
 ### Last ned koden
 
-``||math: Last ned||`` koden til din micro:bit og skru lyset i byen både på og av minst én gang hjelp av lyssensoren til micro:bi! 
+``||math: Last ned||`` koden til din micro:bit og skru lyset i byen både på og av minst én gang for å få løsningsbokstaven til oppgaven!! 
 
 Lykke til!
