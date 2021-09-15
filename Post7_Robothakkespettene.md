@@ -8,7 +8,7 @@
 
 Inne i denne skogen er det utplassert flere robot-hakkespetter. En av disse har startet å hakke på en litt rar måte. 
 
-Din oppgave er å finne den og bokstaven den vil gi deg.
+**Din oppgave er å finne den og bokstaven den vil gi deg.**
 
 Følg instruksjonen for hvordan du kan bruke programmering til å finne hakkespetten!
 
@@ -28,7 +28,7 @@ radio.setGroup(7)
 
 Finn frem blokken: ``||input: Når knapp A trykkes||``.
 
-Inni her skal vi plassere en ``||radio: radio send tekst||``. Teksten vi skal sende er: "systemtest". 
+Inni her skal vi plassere en ``||radio: radio send tekst||``. **Teksten vi skal sende er: "systemtest".** 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -42,6 +42,6 @@ input.onButtonPressed(Button.A, function () {
 
 ``||math: Last ned||`` koden inn på micro:biten din. Trykk på knapp A for å spille av alle hakkespettene. Gå rundt i skogen og lytt etter den defekte hakkespetten.
 
-Når du finner den, titt opp i trestammen der du hører den defekte hakkespetten, så vil du finne bokstaven den vil vise deg!
+**Når du finner den, titt opp i trestammen der du hører den defekte hakkespetten, så vil du finne bokstaven den vil vise deg!**
 
 Lykke til!

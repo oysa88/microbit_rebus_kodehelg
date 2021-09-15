@@ -7,7 +7,7 @@
 
 ![Flaskene.gif](https://i.postimg.cc/WbbPfVS1/Flaskene.gif)
 
-På denne posten skal du sende en kommando som skal spille på flaskene, fra den mørkeste til den lyseste tonen.
+På denne posten skal du sende en kommando som skal spille på flaskene, **fra den mørkeste til den lyseste tonen**.
 
 Følg instruksjonen videre for å løse oppgaven!
 
@@ -31,7 +31,7 @@ Finn frem blokken: ``||input: Når knapp B trykkes||``.
 
 Nå skal vi spille på flaskene i riktig rekkefølge. Bruk blokken``||radio: Send verdi||``. Endre ``||radio: navn||`` til ``||radio: spill||``. 
 
-Send én blokk per flaske, og sett verdien til å være nummeret til flasken du vil spille på.
+**Send én blokk per flaske, og sett verdien til å være nummeret til flasken du vil spille på.**
 
 Sett blokkene inni en ``||input: Når knapp B trykkes||``.
 

@@ -7,9 +7,9 @@
 
 ![output-mtu-Sij.gif](https://i.postimg.cc/0QqYc2P6/output-mtu-Sij.gif)
 
-Du skal spille den samme melodien som den analoge synthen spiller. Trykk på knappen ved synthen for å høre melodien. 
+Du skal spille den samme melodien som synthen spiller. Trykk på DEMO-knappen ved synthen for å høre melodien. 
 
-Følg instruksjonen for å løse oppgaven!
+**Følg instruksjonen for å løse oppgaven!**
 
 ## Steg 2
 
@@ -31,7 +31,7 @@ Inni her skal vi spille av tonene i riktig rekkefølge. For å gjøre det må vi
 
 Bruk én blokk av ``||radio: radio send tekst||`` der dere skriver inn alle tonene etter hverandre i riktig rekkefølge.
 
-NB: Bruk bare store bokstaver! (Se eksempel i Hint-vinduet.)
+**NB: Bruk bare store bokstaver! (Se eksempel i Hint-vinduet.)**
 
 ```blocks
 input.onButtonPressed(Button.AB, function () {

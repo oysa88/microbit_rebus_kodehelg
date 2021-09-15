@@ -17,7 +17,7 @@ Hvis du har riktig løsningsord, vil orkesteret spille en sang for deg! Hvis ikk
 
 Sett opp ``||radio:Radio sett gruppe||`` nr. 8 i ``||basic: ved start||``.
 
-Deretter skal du, ``||input: når knapp A trykkes||``, sende løsningsordet med ``||radio: radio send tekst||``. (Bruk bare store bokstaver.)
+Deretter skal du, ``||input: når knapp A trykkes||``, sende løsningsordet med ``||radio: radio send tekst||``. **(Bruk bare store bokstaver.)**
 
 ```blocks
 radio.setGroup(8)
@@ -32,4 +32,4 @@ input.onButtonPressed(Button.A, function () {
 
 ``||math: Last ned||`` koden din inn på en micro:bit. Trykk på knapp A for å sende over løsningsordet, og lytt på melodien som spilles!
 
-God fornøyelse, og gratulerer!
+**God fornøyelse, og gratulerer!**

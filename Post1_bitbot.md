@@ -12,7 +12,7 @@ Deres oppgave er å styre bilen fra start til mål på banen. Bilen må kjøre o
 
 Ringen med lys vil fylles opp og du vil høre en lyd når en sensor er blitt aktivert! Dere har 40 sekunder på å kjøre bilen gjennom hele løypa, og dere har så mange forsøk dere trenger!
 
-Så følg instruksjonen videre for å programmere fjernkontrollen. 
+**Så følg instruksjonen videre for å programmere fjernkontrollen.**
 
 Lykke til!
 
@@ -22,7 +22,7 @@ Lykke til!
 
 ### Ved start
 
-Sett opp egen ``||radio:Radio sett gruppe||``. Den skal være den samme som posten du er på. Sett den inn i ``||basic: ved start||``.
+Sett opp egen ``||radio:Radio sett gruppe||``. **Den skal være den samme som posten du er på.** Sett den inn i ``||basic: ved start||``.
 
 ```blocks
 radio.setGroup(1)
@@ -34,7 +34,7 @@ radio.setGroup(1)
 
 ![](https://cdn.sanity.io/images/ajwvhvgo/production/5da9fe1ca277f95cc2e7d1c1f1f8b68b32a747f7-622x625.png?w=435&q=80&fit=max&auto=format)
 
-For å kunne kontrollere bit:bot-bilen skal vi bruke helningsvinklene til micro:bit. 
+For å kunne kontrollere bit:bot-bilen skal vi bruke **helningsvinklene** til micro:bit. 
 
 Vi skal sende:
 
@@ -53,7 +53,7 @@ Inni ``||basic: gjenta for alltid||``:
 - Sett ``||variabel: Pitch||`` til å lese av ``||input: helningsvinkel forover-bakover||``
 - Sett ``||variabel: Roll||`` til å lese av ``||input: helningsvinkel høyre-venstre||``
 
-PS: Helningsvinkel hentes fra ``||input: Inndata --> mer||``
+**PS: Helningsvinkel hentes fra ``||input: Inndata --> mer||``**
 
 ```blocks
 let Pitch = 0
@@ -77,7 +77,7 @@ Inn blokken ``||input: når knapp A+B trykkes ||``:
 - Hent en ``||logic: hvis-betingelse||`` med ``||logic: ellers||``.
 - Sett at hvis variabelen ``||variabel: AvPå||`` = 0, skal ``||variabel: AvPå||`` settes til 1. Ellers skal den settes til 0. 
 
-Når vi sender 1 skrus bit:bot seg på, når vi sender 0 skrus den seg av.
+**Når vi sender 1 skrus bit:bot seg på, når vi sender 0 skrus den seg av.**
 
 ```blocks
 let AvPå = 0

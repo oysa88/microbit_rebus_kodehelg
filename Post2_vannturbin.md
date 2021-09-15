@@ -8,7 +8,7 @@
 
 Vi trenger å produsere strøm til byen vår, så for å gjøre det skal vi starte opp vannkraftverket. 
 
-Vi skal sette i gang en testproduksjon som skal vare i 10 sekunder. 
+**Vi skal sette i gang en testproduksjon som skal vare i 10 sekunder.**
 
 ## Steg 2
 
@@ -24,7 +24,7 @@ radio.setGroup(2)
 
 ### Bruke knappene for å starte produksjonen
 
-Vi skal starte testen ``||input: når knapp A trykkes||``. 
+**Vi skal starte testen ``||input: når knapp A trykkes||``.** 
 
 - For å starte testen skal vi sende en ``||radio: radio send tekst||`` = "Start produksjon".
 - Så skal vi sette inn en ``||basic: pause||`` på 10000 millisekunder (10 sek).
