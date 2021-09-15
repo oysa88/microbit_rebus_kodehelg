@@ -29,7 +29,9 @@ radio.setGroup(6)
 
 Inni blokken ``||input: når knapp A trykkes||`` skal vi lage en funksjon for å skru lysene i byen på og av. 
 
-Først må vi lage variabelen: ``||variable: Lys||``. Funksjonen skal sjekke om ``||variable: Lys||`` er ``||logic: sann||`` eller ``||logic: usann||``. 
+Først må vi lage variabelen: ``||variable: Lys||``. 
+
+Funksjonen skal sjekke om ``||variable: Lys||`` er ``||logic: sann||`` eller ``||logic: usann||``. 
 
 - Så ``||logic: hvis||`` ``||variable: Lys||`` er ``||logic: sann||`` skal ``||variable: Lys||`` settes til ``||logic: usann||`` og ``||radio: radio send tekst||`` = "Lys av". 
 - Ellers, sett ``||variable: Lys||`` til ``||logic: sann||`` og ``||radio: radio send tekst||`` = "Lys på". 
@@ -68,5 +70,7 @@ radio.onReceivedString(function (receivedString) {
 ### Last ned koden
 
 ``||math: Last ned||`` koden til din micro:bit og skru lyset i byen både på og av minst én gang for å få løsningsbokstaven til oppgaven!! 
+
+NB: Vent minst 3 sekunder med å skru av lysene etter du har skrudd de på!
 
 Lykke til!

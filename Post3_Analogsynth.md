@@ -60,4 +60,6 @@ radio.onReceivedString(function (receivedString) {
 
 ``||math: Last ned||`` koden til micro:biten og send den avgårde ved å trykke på A og B på micro:biten. 
 
+NB: Pass på at toget IKKE kjører når du prøver å skru på og av lyset i byen! (Grønt lys på knappen ved togbanen.)
+
 Lykke til!

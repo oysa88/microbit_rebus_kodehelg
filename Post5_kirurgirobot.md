@@ -29,11 +29,11 @@ radio.setGroup(5)
 
 ### Sett opp banen som roboten skal bevege seg i.
 
-Robotarmen beveger seg rundt i et koordinatsystem som du kan se på operasjonsbordet. Hodet som beveger kniven vil bevege seg med én og én rute av gangen: Frem og tilbake, fra side til side, eller diagonalt.
+Robotarmen beveger seg rundt i et koordinatsystem som du kan se på operasjonsbordet. Hodet som beveger kniven vil bevege seg med én og én rute av gangen: Frem og tilbake, fra side til side, eller diagonalt. Se ved siden av pasienten hvilke karakter du må sende for å bevege kniven rundt på operasjonsbordet.
 
 Finn frem blokken: ``||input: Når ristes||``. Inni her skal vi bruke blokken ``||radio: radio send tekst||``.
 
-I meldingen vi skal sende, må vi skrive inn alle bevegelsene vi vil at roboten skal utføre. (Maks 19 karakterer per ``||radio: radio send tekst||``). 
+I meldingen vi skal sende, må vi skrive inn alle bevegelsene vi vil at roboten skal utføre.  (Maks 19 karakterer per ``||radio: radio send tekst||``). 
 
 NB: Bruk bare store bokstaver! (Se eksempel i Hint-vinduet.)
 

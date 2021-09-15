@@ -10,7 +10,7 @@ Inne i denne skogen er det utplassert flere robot-hakkespetter. En av disse har 
 
 Din oppgave er å finne den og bokstaven den vil gi deg.
 
-Følg Instruksjonen for hvordan du kan bruke programmering til å finne hakkespetten!
+Følg instruksjonen for hvordan du kan bruke programmering til å finne hakkespetten!
 
 ## Steg 2
 
