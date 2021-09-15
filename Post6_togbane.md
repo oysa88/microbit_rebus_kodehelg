@@ -71,6 +71,7 @@ radio.onReceivedString(function (receivedString) {
 
 ``||math: Last ned||`` koden til din micro:bit og skru lyset i byen både på og av minst én gang for å få løsningsbokstaven til oppgaven!! 
 
-NB: Vent minst 3 sekunder med å skru av lysene etter du har skrudd de på!
+NB: Vent minst 3 sekunder med å skru av lysene etter du har skrudd de på! Pass på at toget IKKE kjører når du prøver å skru på og av lyset i byen! (Må være grønt lys på knappen ved togbanen.)
+
 
 Lykke til!
