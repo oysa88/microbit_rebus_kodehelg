@@ -8,7 +8,7 @@
 
 ![Bitbot-bilbane-600px.png](https://i.postimg.cc/fTws5C6m/Bitbot-bilbane-600px.png)
 
-Deres oppgave er å styre bilen fra start til mål på banen. Bilen må kjøre over alle (3) sensorene på banen. Rekkefølgen har ingen betydning, men sensor i mål MÅ være den siste dere aktiverer.
+Deres oppgave er å styre bilen fra start til mål på banen. **Bilen må kjøre over alle (3) sensorene på banen.**
 
 Ringen med lys vil fylles opp og du vil høre en lyd når en sensor er blitt aktivert! Dere har 40 sekunder på å kjøre bilen gjennom hele løypa, og dere har så mange forsøk dere trenger!
 
