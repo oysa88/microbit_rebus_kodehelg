@@ -1,4 +1,4 @@
-# Post 3: Spill melodien som vises på analog synth
+# Post 1: Spill melodien som vises på analog synth
 
 
 ## Steg 1 @unplugged
@@ -18,7 +18,7 @@ Du skal spille den samme melodien som synthen spiller. Trykk på DEMO-knappen ve
 Sett opp egen ``||radio:Radio sett gruppe||``. Den skal være den samme som posten du er på. Sett den inn i ``||basic: ved start||``.
 
 ```blocks
-radio.setGroup(3)
+radio.setGroup(1)
 ```
 
 ## Steg 3

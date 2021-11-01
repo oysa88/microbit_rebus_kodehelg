@@ -1,4 +1,4 @@
-# Post 4: Spille på flaskene fra mørkeste til lyseste tone
+# Post 3: Spille på flaskene fra mørkeste til lyseste tone
 
 
 ## Steg 1 @unplugged
@@ -20,7 +20,7 @@ Følg instruksjonen videre for å løse oppgaven!
 For å kunne "snakke" med flaskene, må vi sett opp en egen ``||radio:Radio sett gruppe||``. Radiogruppen skal være den samme som posten du er på. Sett den inn i ``||basic: ved start||``.
 
 ```blocks
-radio.setGroup(4)
+radio.setGroup(3)
 ```
 
 ## Steg 3

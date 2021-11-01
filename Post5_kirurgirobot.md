@@ -1,4 +1,4 @@
-# Post 5: Kirurgirobot
+# Post 4: Kirurgirobot
 
 ## Steg 1 @unplugged
 
@@ -22,7 +22,7 @@ For å kunne snakke med roboten, trenger vi å bruke radiokommunikasjon.
 Sett opp egen ``||radio:Radio sett gruppe||``. Den skal være den samme som posten du er på. Sett den inn i ``||basic: ved start||``.
 
 ```blocks
-radio.setGroup(5)
+radio.setGroup(4)
 ```
 
 ## Steg 3
